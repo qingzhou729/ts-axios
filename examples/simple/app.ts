@@ -1,5 +1,4 @@
 import axios from '../../index';
-console.log('test');
 axios({
     method: 'get',
     url: '/simple/get',

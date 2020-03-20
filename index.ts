@@ -17,7 +17,6 @@ function processConfig(config: AxiosRequestConfig) {
 // 入口
 function axios(config: AxiosRequestConfig) {
     processConfig(config);
-    console.log(config)
     xhr(config);
 }
 

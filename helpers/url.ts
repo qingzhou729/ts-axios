@@ -20,7 +20,6 @@ export function bulidURL (url: string, params?: any): string {
 
     const parts: string[] = [];
     Object.keys(params).forEach((key) => {
-        console.log(params)
         const val = params[key];
         let values: string[];
 
@@ -35,7 +34,7 @@ export function bulidURL (url: string, params?: any): string {
             // 这种情况只有一个值，为了和数组情况统一
             values = [val];
         }
-        console.log(values)
+
         values.forEach((val) => {
             if (isDate(val)) {
                 val = val.toISOString();
